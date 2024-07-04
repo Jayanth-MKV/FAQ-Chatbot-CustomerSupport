@@ -24,7 +24,7 @@ WORKDIR /app
 
 COPY requirements.txt /app/
 
-RUN pip install -r requirements.txt
+RUN pip install --require-hashes --no-deps -r requirements.txt
 # Install dependencies
 # RUN poetry install --no-dev --no-interaction --no-ansi
 
@@ -40,4 +40,4 @@ EXPOSE 8501
 HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
 
 # Run the Streamlit app
-ENTRYPOINT ["streamlit", "run", "streamlit_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+ENTRYPOINT ["streamlit", "run", "main.py", "--server.port=8501", "--server.address=0.0.0.0"]

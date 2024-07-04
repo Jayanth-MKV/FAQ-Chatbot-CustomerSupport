@@ -1078,4 +1078,4 @@ wrapt==1.16.0 ; python_full_version >= "3.10.0" and python_version < "3.11" \
 zipp==3.17.0 ; python_full_version >= "3.10.0" and python_version < "3.11" \
     --hash=sha256:0e923e726174922dce09c53c59ad483ff7bbb8e572e00c7f7c46b88556409f31 \
     --hash=sha256:84e64a1c28cf7e91ed2078bb8cc8c259cb19b76942096c8d7b84947690cabaf0
-https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.7.1/en_core_web_md-3.7.1.tar.gz
+https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.7.1/en_core_web_md-3.7.1-py3-none-any.whl --hash=sha256:6a0f857a2b4d219c6fa17d455f82430b365bf53171a2d919b9376e5dc9be032e
